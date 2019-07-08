@@ -1,5 +1,5 @@
 # rssrai2019_scene_classification
-Baseline: Test Acc89.8%
+Baseline: Test Acc90.14%
 =======
 - step1
 
