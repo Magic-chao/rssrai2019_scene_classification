@@ -14,7 +14,6 @@ import torch.optim as optim
 from torch.autograd import Variable
 from tensorboardX import SummaryWriter
 from Nadam import Nadam
-from model import senet52
 from data import get_train_data, get_val_data
 from utils import save_checkpoint
 import utils
