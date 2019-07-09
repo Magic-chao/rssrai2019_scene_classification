@@ -126,10 +126,10 @@ def val(epoch):
             #cal acc
             pred = np.argmax(pred.data.cpu().numpy(), axis=1)
             gt = label.squeeze().cpu().numpy()
-            rightN += (pred==gt).sum()
+            count += (pred==gt).sum()
         msg = '==> Train{}: Complete. Val Acc: {:.4f} '.format(epoch, count/len(val_loader.dataset))
         logger.write(msg)
-        writer.add_scalar('scalar/val_acc', rightN/len(val_loader.dataset), epoch)
+        writer.add_scalar('scalar/val_acc', count/len(val_loader.dataset), epoch)
 
 if __name__ == '__main__':
     for epoch in range(args.begin_epoch, args.epochs + 1):
