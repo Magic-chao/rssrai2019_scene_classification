@@ -1,4 +1,6 @@
 # rssrai2019_scene_classification
+
+* The contest address is here[http://rscup.bjxintong.com.cn/#/theme/1]
 Baseline: Test Acc90.14%
 =======
 - step1
